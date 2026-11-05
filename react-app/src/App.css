@@ -1,0 +1,120 @@
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.packages-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.package-card {
+  background: #fff;
+  border: 1px solid #e2e2e8;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.package__title {
+  margin: 0 0 12px;
+  font-size: 1.2rem;
+}
+
+.package__empty-text {
+  color: #777;
+  margin: 0 0 12px;
+}
+
+.package__total {
+  font-weight: 600;
+  margin: 12px 0;
+}
+
+.items-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f7f7f9;
+  border-radius: 6px;
+  padding: 6px 10px;
+}
+
+.item__name {
+  flex: 1;
+}
+
+.item__price {
+  color: #555;
+}
+
+.btn {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background: #2f6fed;
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background: #2559c4;
+}
+
+.btn--close {
+  width: 100%;
+  margin-top: 12px;
+  background: #1f9d55;
+  color: #fff;
+}
+
+.btn--close:hover {
+  background: #177a42;
+}
+
+.btn--remove {
+  background: transparent;
+  color: #d92d20;
+  padding: 2px 6px;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.btn--remove:hover {
+  background: #fde8e6;
+}
+
+.add-item-form {
+  display: flex;
+  gap: 8px;
+}
+
+.add-item-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.add-item-form input[type='number'] {
+  flex: 0 0 90px;
+}
